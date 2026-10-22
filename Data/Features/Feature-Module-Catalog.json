@@ -1,0 +1,48 @@
+{
+  "game": "Aethernal Aurelia",
+  "engine": "Unreal Engine 5.7",
+  "modulePolicy": "Every feature is a runtime module with data, C++ implementation, Blueprint presentation, and optional Lua hooks.",
+  "domains": [
+    "World", "Character", "Combat", "Quest", "NPC", "Dungeon", "Raid", "Item", "Profession", "Social", "PvP", "Economy", "Progression", "Cinematic", "Traversal", "UI", "Networking", "Persistence", "Scripting"
+  ],
+  "activityCaps": {
+    "openWorld": 64,
+    "dungeon": 4,
+    "trial": 6,
+    "raid": 12
+  },
+  "continent": {
+    "id": "Aurelia",
+    "starterZone": "GreenwardFrontier"
+  },
+  "modules": [
+    {"id":"World","domain":"World","submodules":["Continents","Regions","Zones","Locations","WorldPartition","Streaming","Navigation","Weather","DayNight","Environment","Resources","WorldEvents","WorldBosses","FastTravel","Mounts"]},
+    {"id":"Character","domain":"Character","submodules":["Identity","Creation","Appearance","Lifecycle","Companions"]},
+    {"id":"Races","domain":"Character","submodules":["Human","Elf","Dwarf","Halfling","Orc","RacialRules"]},
+    {"id":"Classes","domain":"Character","submodules":["Barbarian","Bard","Cleric","Druid","Fighter","Monk","Paladin","Ranger","Rogue","Sorcerer","Warlock","Wizard","Specializations","Roles"]},
+    {"id":"Stats","domain":"Progression","submodules":["Primary","Secondary","Resources","Derived","Ratings","Modifiers"]},
+    {"id":"Combat","domain":"Combat","submodules":["Targeting","Melee","Ranged","Magic","Damage","Mitigation","Threat","Dodge","Block","Parry","Interrupt","Stagger","StatusEffects","Combos","Finishers","BossMechanics"]},
+    {"id":"Abilities","domain":"Combat","submodules":["Skills","Spells","Cooldowns","Resources","Effects","Combos","Talents"]},
+    {"id":"Items","domain":"Item","submodules":["Weapons","Armor","Jewelry","Consumables","Materials","Rarity","Affixes","Sockets","Gems","Enchantments","Upgrades","Cosmetics"]},
+    {"id":"Inventory","domain":"Item","submodules":["Bags","Stacks","Currencies","QuestItems","Materials","Consumables"]},
+    {"id":"Equipment","domain":"Item","submodules":["Slots","Loadouts","GearStats","Appearance","Transmog"]},
+    {"id":"Quests","domain":"Quest","submodules":["Campaign","Chapters","Main","Side","Subquests","Class","Faction","Profession","Dungeon","Trial","Raid","World","Hidden","Objectives","Rewards","Dialogue"]},
+    {"id":"NPC","domain":"NPC","submodules":["Definitions","Schedules","Vendors","Trainers","Guards","Factions","Relationships","Spawning"]},
+    {"id":"AI","domain":"NPC","submodules":["Perception","Navigation","Combat","Patrol","Assist","Flee","Group","Encounter","CreatureBehavior"]},
+    {"id":"Dungeons","domain":"Dungeon","submodules":["Instance","Party","Finder","Encounters","Trash","MiniBoss","Puzzle","FinalBoss","Loot","Difficulty"]},
+    {"id":"Trials","domain":"Dungeon","submodules":["Instance","SixPlayer","Challenges","Bosses","Rewards","Difficulty"]},
+    {"id":"Raids","domain":"Raid","submodules":["Instance","TwelvePlayer","Wings","Encounters","BossPhases","Mechanics","Loot","Difficulty"]},
+    {"id":"Professions","domain":"Profession","submodules":["Gathering","Mining","Herbalism","Woodworking","Blacksmithing","Armoring","Weaponsmithing","Leatherworking","Tailoring","Alchemy","Enchanting","Jewelcrafting","Cooking","Scribing","Recipes","Specialization"]},
+    {"id":"Social","domain":"Social","submodules":["Friends","Party","RaidGroup","Chat","Mail","Trade","Inspection"]},
+    {"id":"Guilds","domain":"Social","submodules":["Membership","Ranks","GuildBank","Progression","Achievements","Activities"]},
+    {"id":"PvP","domain":"PvP","submodules":["Duels","OpenWorld","Battlegrounds","Arenas","Factions","Rankings","Rewards"]},
+    {"id":"Economy","domain":"Economy","submodules":["Currencies","Vendors","Trading","Marketplace","AuctionHouse","CraftingEconomy","Repair","TravelCosts"]},
+    {"id":"Progression","domain":"Progression","submodules":["Levels","Experience","Talents","Abilities","Professions","Reputation","Factions","Achievements","Collections","Titles"]},
+    {"id":"Cinematic","domain":"Cinematic","submodules":["Cutscenes","Dialogue","Camera","Facial","Animation","Music","Audio","VFX","BossPresentation"]},
+    {"id":"Traversal","domain":"Traversal","submodules":["Movement","Sprint","Jump","Swim","Climb","Vault","Slide","Mounts","Glide","TraversalObjects"]},
+    {"id":"UI","domain":"UI","submodules":["HUD","Character","Inventory","Equipment","Stats","Talents","Abilities","QuestLog","Map","Social","Guild","Professions","Finder","Settings","Mobile","Controller","KeyboardMouse","Accessibility"]},
+    {"id":"Networking","domain":"Networking","submodules":["Authority","Replication","Sessions","Relevancy","Host","Migration","Reconnect","DedicatedServer"]},
+    {"id":"Persistence","domain":"Persistence","submodules":["Account","Character","Inventory","Equipment","QuestState","WorldState","Guild","Economy","Progression","Realm"]},
+    {"id":"Lua","domain":"Scripting","submodules":["WorldScripts","NPCScripts","QuestScripts","CombatScripts","EventScripts","Validation","Sandbox","Bindings"]}
+  ]
+}
