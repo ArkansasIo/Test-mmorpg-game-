@@ -1,0 +1,32 @@
+{
+  "world": {
+    "targetAreaKm2": 100,
+    "continents": [
+      {
+        "id": "Aurelia",
+        "areaKm2": 25,
+        "zones": ["GreenwardFrontier", "AurelianHeartlands", "WatcherCoast"]
+      },
+      {
+        "id": "Varkhora",
+        "areaKm2": 20,
+        "zones": ["Frostmarch", "HighstoneExpanse", "IronwindValley"]
+      },
+      {
+        "id": "Elyndra",
+        "areaKm2": 20,
+        "zones": ["Elderwood", "MoonlitVale", "Silvergrove"]
+      },
+      {
+        "id": "Drakor",
+        "areaKm2": 20,
+        "zones": ["AshenReach", "RedDuneSea", "Emberfall"]
+      },
+      {
+        "id": "Nyxara",
+        "areaKm2": 15,
+        "zones": ["VeiledFrontier", "Nightsea", "StarfallWastes"]
+      }
+    ]
+  }
+}
