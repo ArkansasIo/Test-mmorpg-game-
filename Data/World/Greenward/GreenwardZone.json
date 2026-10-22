@@ -1,0 +1,32 @@
+{
+  "id": "greenward-frontier",
+  "displayName": "Greenward Frontier",
+  "footprintKm2": 4.0,
+  "faction": "Human",
+  "camera": "ThirdPerson",
+  "worldPartition": true,
+  "areas": [
+    "GreenwardVillage",
+    "Farmland",
+    "OldPinewood",
+    "WatchersRoad",
+    "OldWatchtower",
+    "HighstoneRidge",
+    "River",
+    "SouthGate",
+    "HollowrootEntrance",
+    "WorldEventClearing"
+  ],
+  "dungeon": {
+    "id": "hollowroot-caverns",
+    "partySize": 4
+  },
+  "worldEvent": {
+    "id": "briarback",
+    "public": true,
+    "minimumPlayers": 1,
+    "maximumPlayers": 64
+  },
+  "assetStrategy": "graybox-first",
+  "mobileStrategy": "scalable-third-person"
+}
